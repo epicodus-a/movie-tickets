@@ -1,14 +1,70 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title></title>
+    <title>Movie Tickets</title>
   </head>
   <body>
-
-  </body>
+    <div class="container-fluid">
+    <h2 class="text-center">Portland Movie Theater</h2>
+    <form id="movie-form">
+      <div class="form-group">
+        <label for="born">Date:</label>
+        <input id="date" class="form-control" type="date">
+      </div>
+      <div class="form-group">
+        <label for="movie">Select a Movie:</label>
+        <select id="movie" class="form-control">
+          <option selected>Choose...</option>
+          <option value="Black Panther">Black Panther</option>
+          <option value="A Wrinkle in Time">A Wrinkle in Time</option>
+          <option value="Tomb Raider">Tomb Raider</option>
+          <option value="Game Night">Game Night</option>
+          <option value="Red Sparrow">Red Sparrow</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="time">Select a Time:</label>
+        <div class="radio" id="time">
+          <label>
+            <input type="radio" name="time" value="5:00 PM">
+            5:00 PM
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="time" value="6:00 PM">
+            6:00 PM
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="time" value="7:30 PM">
+            7:30 PM
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="time" value="8:00 PM">
+            8:00 PM
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="age">Select Your Age:</label>
+        <select id="age" class="form-control">
+          <option selected>Choose...</option>
+          <option value="13-17">13-17</option> //
+          <option value="18-54">18-54</option>
+          <option value="55+">55+</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-success form-control">Purchase Tickets!</button>
+    </form>
+    <div id="user-output" class="my-5">
+    </div>
 </html>

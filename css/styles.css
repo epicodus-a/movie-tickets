@@ -1,0 +1,24 @@
+#user-output {
+  display: none;
+}
+
+#user-output {
+  background-image: url("../img/ticket.png");
+  background-repeat: no-repeat;
+  color: white;
+  margin: 30px;
+  padding: 20px;
+  height: 80%;
+  width: auto;
+
+}
+
+.outputDisplay {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.lead {
+  padding-left: 120px;
+  margin: 20px;
+}
